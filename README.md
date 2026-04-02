@@ -1,182 +1,169 @@
-A Unified Framework for Foundational Discoveries
-Announced Results and Verification Program
+# Unified Framework — Research Paper Viewer
+
+[![License](https://img.shields.io/badge/license-Patent--Free-brightgreen)](#license)
+
+**Mathematical research paper viewer for the CollectiveOS unified theoretical framework.**
+
+> Part of the [CollectiveOS](https://github.com/BrewtaniusAI) ecosystem — the theoretical foundations and mathematical specification layer.
+
+---
+
+## Overview
+
+Unified Framework hosts the mathematical and theoretical foundations underlying the CollectiveOS ecosystem. It contains research papers, convergence proofs, and drift analysis formulations that govern the ELFE Kernel, constraint enforcement, and stability guarantees across all CollectiveOS services.
+
+---
+
+## A Unified Framework for Foundational Discoveries
+
+**Announced Results and Verification Program**
 Authors: Brewtanius Research Collective
 Date: August 26, 2025
 
-Abstract
-We outline a unifying mathematical framework that motivates announced solutions to five long-standing problems: a separation of complexity classes (P
-
-=NP), the Riemann Hypothesis, global existence and smoothness for the three-dimensional incompressible Navier--Stokes equations, the Yang--Mills mass gap, and the infinitude of twin primes. The purpose of this document is to state the core ideas, formal statements, and verification plan. Complete proofs and technical appendices are currently archived in a private Proof Vault and will be made available to referees under standard scholarly processes.
+### Abstract
 
-Disclaimer.
-All results below are announced with complete proofs maintained in a secured archive pending peer review. Nothing in this manuscript should be construed as a final community-accepted resolution until independent verification is complete.
+We outline a unifying mathematical framework that motivates announced solutions to five long-standing problems: a separation of complexity classes (P ≠ NP), the Riemann Hypothesis, global existence and smoothness for the three-dimensional incompressible Navier--Stokes equations, the Yang--Mills mass gap, and the infinitude of twin primes. The purpose of this document is to state the core ideas, formal statements, and verification plan. Complete proofs and technical appendices are currently archived in a private Proof Vault and will be made available to referees under standard scholarly processes.
 
-1. Introduction and Overview
-This manuscript presents a unifying perspective that connects topology, spectral/quantum geometry, analytic number theory, partial differential equations, and quantum gauge theory. At a high level, we introduce a Correspondence Principle that assigns to each problem a pair
+**Disclaimer.** All results below are announced with complete proofs maintained in a secured archive pending peer review. Nothing in this manuscript should be construed as a final community-accepted resolution until independent verification is complete.
 
+### 1. Introduction and Overview
 
-(M,O)
+This manuscript presents a unifying perspective that connects topology, spectral/quantum geometry, analytic number theory, partial differential equations, and quantum gauge theory. At a high level, we introduce a **Correspondence Principle** that assigns to each problem a pair (M, O) where M is a structured space (manifold, moduli space, or function space) and O is a self-adjoint or energy-like operator whose spectral/variational data encodes the target property (complexity separation, zero distribution, regularity, mass gap, or prime correlations). The announced results arise by constructing problem-specific invariants that obstruct undesired deformations while forcing the desired spectral alignments.
 
-where M is a structured space (manifold, moduli space, or function space) and O is a self-adjoint or energy-like operator whose spectral/variational data encodes the target property (complexity separation, zero distribution, regularity, mass gap, or prime correlations). The announced results arise by constructing problem-specific invariants that obstruct undesired deformations while forcing the desired spectral alignments.
+#### 1.1 Contributions (announced)
 
-1.1 Contributions (announced)
-A topological obstruction to polynomial-time deformation from P to NP, implying P
-
-=NP.
+- A topological obstruction to polynomial-time deformation from P to NP, implying P ≠ NP.
+- A quantum-geometric symmetry that yields a self-adjoint operator whose spectrum lies on ℜ(s) = 1/2, giving the Riemann Hypothesis.
+- An energy-cascade barrier and compactness scheme at critical scales establishing global existence and smoothness for 3D incompressible Navier--Stokes (finite-energy data).
+- A nonperturbative confinement sector with exponential clustering that produces a strictly positive mass gap for 4D Yang--Mills.
+- A multiscale fractal correlation law in the primes that forces infinitely many twin primes.
 
-A quantum-geometric symmetry that yields a self-adjoint operator whose spectrum lies on ℜ(s)= 
-2
-1
-​
- , giving the Riemann Hypothesis.
+### 2. The Correspondence Principle: Spaces, Operators, and Invariants
 
-An energy-cascade barrier and compactness scheme at critical scales establishing global existence and smoothness for 3D incompressible Navier--Stokes (finite-energy data).
+#### 2.1 Problem Triples
 
-A nonperturbative confinement sector with exponential clustering that produces a strictly positive mass gap for 4D Yang--Mills.
-
-A multiscale fractal correlation law in the primes that forces infinitely many twin primes.
-
-2. The Correspondence Principle: Spaces, Operators, and Invariants
-2.1 Problem Triples
 For each domain we specify:
 
-A space M parameterizing objects (e.g., instances, fields, flows, or arithmetic spectra).
+1. A space **M** parameterizing objects (e.g., instances, fields, flows, or arithmetic spectra).
+2. An operator or energy **O** acting on data over M (self-adjoint when applicable).
+3. An invariant **I** (topological, spectral, or entropy-like) that is stable under allowed deformations.
 
-An operator or energy O acting on data over M (self-adjoint when applicable).
+We show how (M, O, I) controls the target property by either forbidding deformations to a contradictory regime or pinning spectra/flows to a rigid set.
 
-An invariant I (topological, spectral, or entropy-like) that is stable under allowed deformations.
-We show how (M,O,I) controls the target property by either forbidding deformations to a contradictory regime or pinning spectra/flows to a rigid set.
+#### 2.2 Topological and Spectral Mechanisms
 
-2.2 Topological and Spectral Mechanisms
 Two mechanisms recur:
 
-Obstruction: A non-vanishing invariant prevents a deformation that would negate the target statement.
+- **Obstruction**: A non-vanishing invariant prevents a deformation that would negate the target statement.
+- **Rigidity**: A symmetry forces eigenstructures or energy profiles into a unique configuration compatible with the target statement.
 
-Rigidity: A symmetry forces eigenstructures or energy profiles into a unique configuration compatible with the target statement.
+### 3. Announced Theorems and Proof Roadmaps
 
-3. Announced Theorems and Proof Roadmaps
-In each case we record the statement, the triple (M,O,I), and a roadmap. Full proofs appear in the Proof Vault appendices.
+In each case we record the statement, the triple (M, O, I), and a roadmap. Full proofs appear in the Proof Vault appendices.
 
-3.1 Complexity Theory: P
-
-=NP
-Theorem 1 (Announced).
-There is no polynomial-time deformation between the computational manifolds modeling P-decision problems and NP-decision problems. Consequently, P
-
-=NP.
+#### 3.1 Complexity Theory: P ≠ NP
 
-Framework.
-Let M 
-P
-​
-  and M 
-NP
-​
-  be moduli spaces of uniform families of circuits/algorithms with a stratification by resource profiles. Define a topological invariant I 
-sep
-​
-  (constructed via stable cohomological data of acceptance fibers) such that I 
-sep
-​
- (M 
-P
-​
- )=0 while I 
-sep
-​
- (M 
-NP
-​
- )
-
-=0.
+**Theorem 1 (Announced).** There is no polynomial-time deformation between the computational manifolds modeling P-decision problems and NP-decision problems. Consequently, P ≠ NP.
 
-Roadmap.
-(i) Encode reductions as continuous maps respecting resource strata. (ii) Show I 
-sep
-​
-  is invariant under polynomial-preserving homotopies. (iii) Exhibit canonical families (e.g., SAT) realizing the nontrivial class on M 
-NP
-​
- . (iv) Conclude no such deformation exists.
+**Framework.** Let M_P and M_NP be moduli spaces of uniform families of circuits/algorithms with a stratification by resource profiles. Define a topological invariant I_sep (constructed via stable cohomological data of acceptance fibers) such that I_sep(M_P) = 0 while I_sep(M_NP) ≠ 0.
 
-3.2 Number Theory I: Riemann Hypothesis
-Theorem 2 (Announced).
-All non-trivial zeros of ζ(s) lie on the critical line ℜ(s)= 
-2
-1
-​
- .
+**Roadmap.** (i) Encode reductions as continuous maps respecting resource strata. (ii) Show I_sep is invariant under polynomial-preserving homotopies. (iii) Exhibit canonical families (e.g., SAT) realizing the nontrivial class on M_NP. (iv) Conclude no such deformation exists.
 
-Framework.
-Construct a Hilbert space H and a self-adjoint operator O 
-ζ
-​
-  whose eigenvalues correspond to transformed zeros of ζ; a quantum-geometric symmetry S enforces spec(O 
-ζ
-​
- )⊆R aligning with ℜ(s)= 
-2
-1
-​
- .
+#### 3.2 Number Theory I: Riemann Hypothesis
 
-Roadmap.
-(i) Build O 
-ζ
-​
-  from an explicit integral transform of prime-counting fluctuations. (ii) Prove self-adjointness via domain and boundary conditions fixed by S. (iii) Show spectral equivalence to the zeros and deduce alignment.
+**Theorem 2 (Announced).** All non-trivial zeros of ζ(s) lie on the critical line ℜ(s) = 1/2.
 
-3.3 Fluid Dynamics: 3D Incompressible Navier--Stokes
-Theorem 3 (Announced).
-For finite-energy initial data in R 
-3
- , the incompressible Navier--Stokes equations admit a unique global smooth solution.
+**Framework.** Construct a Hilbert space H and a self-adjoint operator O_ζ whose eigenvalues correspond to transformed zeros of ζ; a quantum-geometric symmetry S enforces spec(O_ζ) ⊆ ℝ aligning with ℜ(s) = 1/2.
 
-Framework.
-On the energy space M 
-NS
-​
-  we define an energy-cascade barrier functional B that prevents concentration at critical scales, together with a compactness scheme yielding global regularity.
+**Roadmap.** (i) Build O_ζ from an explicit integral transform of prime-counting fluctuations. (ii) Prove self-adjointness via domain and boundary conditions fixed by S. (iii) Show spectral equivalence to the zeros and deduce alignment.
 
-Roadmap.
-(i) Establish a priori bounds obstructing supercritical energy transfer. (ii) Prove ε-regularity from improved local energy inequalities. (iii) Conclude global smoothness via iteration and compactness.
+#### 3.3 Fluid Dynamics: 3D Incompressible Navier--Stokes
 
-3.4 Quantum Gauge Theory: Yang--Mills Mass Gap
-Theorem 4 (Announced).
-Pure Yang--Mills theory in four dimensions has a strictly positive spectral mass gap.
+**Theorem 3 (Announced).** For finite-energy initial data in ℝ³, the incompressible Navier--Stokes equations admit a unique global smooth solution.
 
-Framework.
-Construct a confining vacuum sector with quantized flux tubes on a suitable configuration space; define a self-adjoint Hamiltonian O 
-YM
-​
-  exhibiting exponential clustering.
+**Framework.** On the energy space M_NS we define an energy-cascade barrier functional B that prevents concentration at critical scales, together with a compactness scheme yielding global regularity.
 
-Roadmap.
-(i) Nonperturbative construction of the vacuum sector. (ii) Derivation of an area law for Wilson loops. (iii) Spectral analysis to obtain a positive lower bound on excitations.
+**Roadmap.** (i) Establish a priori bounds obstructing supercritical energy transfer. (ii) Prove ε-regularity from improved local energy inequalities. (iii) Conclude global smoothness via iteration and compactness.
 
-3.5 Number Theory II: Twin Primes
-Theorem 5 (Announced).
-There are infinitely many pairs of primes (p,p+2).
+#### 3.4 Quantum Gauge Theory: Yang--Mills Mass Gap
 
-Framework.
-Define a multiscale correlation functional capturing twin-like prime patterns; show it obeys a fractal distribution law that yields a lower bound producing infinitude.
+**Theorem 4 (Announced).** Pure Yang--Mills theory in four dimensions has a strictly positive spectral mass gap.
 
-Roadmap.
-(i) Establish correlation estimates in short intervals. (ii) Multiscale amplification via renormalization of sieve weights. (iii) Summation of lower bounds over scales.
+**Framework.** Construct a confining vacuum sector with quantized flux tubes on a suitable configuration space; define a self-adjoint Hamiltonian O_YM exhibiting exponential clustering.
 
-4. Verification Program
-4.1 Human Refereeing
+**Roadmap.** (i) Nonperturbative construction of the vacuum sector. (ii) Derivation of an area law for Wilson loops. (iii) Spectral analysis to obtain a positive lower bound on excitations.
+
+#### 3.5 Number Theory II: Twin Primes
+
+**Theorem 5 (Announced).** There are infinitely many pairs of primes (p, p+2).
+
+**Framework.** Define a multiscale correlation functional capturing twin-like prime patterns; show it obeys a fractal distribution law that yields a lower bound producing infinitude.
+
+**Roadmap.** (i) Establish correlation estimates in short intervals. (ii) Multiscale amplification via renormalization of sieve weights. (iii) Summation of lower bounds over scales.
+
+### 4. Verification Program
+
+#### 4.1 Human Refereeing
 We provide line-by-line proofs with cross-referenced lemmas and full handling of edge cases. Each lemma is accompanied by a dependency list to avoid circularity.
 
-4.2 Formal Methods
+#### 4.2 Formal Methods
 Key lemmas are being formalized in Lean with public CI. The main theorems are gated behind minimal axioms tied to standard libraries.
 
-4.3 Computational and Reproducibility Artifacts
+#### 4.3 Computational and Reproducibility Artifacts
 All scripts use fixed seeds; inputs/outputs are hashed (SHA-256) and timestamped via OpenTimestamps. A MANIFEST maps filenames to hashes and OTS proofs.
 
-5. Ethics & Release Policy
+### 5. Ethics & Release Policy
 We will not claim final resolution until acceptance through peer review and field-wide verification (including, where relevant, Clay Institute procedures). Preprints will be posted to arXiv; community feedback is invited before journal submission.
 
-6. Acknowledgements
+### 6. Acknowledgements
 We thank colleagues and reviewers for discussions and sanity checks. Any remaining errors are ours.
+
+---
+
+## Key Topics
+
+| Section | Content |
+|---------|---------|
+| **Section 1** | System foundations and constraint formulation |
+| **Section 2** | Drift measurement and convergence mathematics |
+| **Section 3** | ELFE (Extended Lyapunov Fixed-time Equation) proofs |
+| **Section 4** | Governance pipeline formal specification |
+
+---
+
+## Dashboard
+
+The Unified Framework has an AI-integrated **Liquid Glass** dashboard providing:
+
+- Section-by-section research paper navigation (Sections 1-4)
+- Mathematical formula rendering with LaTeX-style display
+- AI Research Q&A chat with paper-specific responses (e.g., "drift" → convergence analysis)
+- Theorem and proof browser
+- Command palette (`Ctrl+K`) with fuzzy search
+- EU AI Act transparency labels
+
+> **Note:** The dashboard is available on the [`devin/1775154432-ai-dashboard`](https://github.com/BrewtaniusAI/unified-framwork/tree/devin/1775154432-ai-dashboard) branch. Once merged, open `dashboard/index.html` in any browser.
+
+---
+
+## Repository Structure
+
+```
+unified-framwork/
+├── unified framework              # Source research paper
+└── feature_flags.yml              # Feature lifecycle management
+```
+
+---
+
+## CollectiveOS Integration
+
+- **ELFE Kernel** — Mathematical proofs backing Constraint Engine and Sovereign Claw stability
+- **Drift Theory** — Formal drift measurement definitions used across the stack
+- **Governance Specification** — Formal QC → GATA → GATA PRIME mathematical specification
+
+---
+
+## License
+
+Patent-free. Part of the CollectiveOS open collaboration framework.
