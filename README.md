@@ -28,7 +28,7 @@ Unified Framework hosts the mathematical and theoretical foundations underlying 
 
 ## Dashboard
 
-The Unified Framework includes an AI-integrated **Liquid Glass** dashboard (`dashboard/index.html`) providing:
+The Unified Framework has an AI-integrated **Liquid Glass** dashboard providing:
 
 - Section-by-section research paper navigation (Sections 1-4)
 - Mathematical formula rendering with LaTeX-style display
@@ -37,7 +37,7 @@ The Unified Framework includes an AI-integrated **Liquid Glass** dashboard (`das
 - Command palette (`Ctrl+K`) with fuzzy search
 - EU AI Act transparency labels
 
-Open `dashboard/index.html` in any browser to launch.
+> **Note:** The dashboard is available on the [`devin/1775154432-ai-dashboard`](https://github.com/BrewtaniusAI/unified-framwork/tree/devin/1775154432-ai-dashboard) branch. Once merged, open `dashboard/index.html` in any browser.
 
 ---
 
@@ -46,8 +46,6 @@ Open `dashboard/index.html` in any browser to launch.
 ```
 unified-framwork/
 ├── unified framework              # Source research paper
-├── dashboard/                     # Liquid Glass paper viewer
-│   └── index.html
 └── feature_flags.yml              # Feature lifecycle management
 ```
 
